@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#233e42">
+  <meta name="description" content="Portfólio pixel art de Alicia Flor — uma aventura pela Grand Line.">
+  <title>Alicia Flor — Ilha da Aventura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand-skull">☠</span><span class="brand-name">ALICIA'S<br><b>ISLAND</b></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menu">MENU ▤</button>
+      <nav class="game-nav">
+        <a class="selected" href="#inicio"><span>⌂</span> Início</a>
+        <a href="#sobre"><span>☺</span> Sobre</a>
+        <a href="#projetos"><span>▣</span> Projetos</a>
+        <a href="#jornada"><span>✦</span> Jornada</a>
+        <a href="#contato"><span>✉</span> Contato</a>
+      </nav>
+      <div class="day-box"><span>☀</span><div>VERÃO 2026<small>ILHA 01 · DIA 12</small></div></div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <canvas id="islandScene" class="pixel-scene" width="480" height="270" aria-label="Ilha tropical em pixel art, com mar, vegetação, casa e navio pirata"></canvas>
+        <div class="hero-vignette"></div>
+        <div class="hero-content">
+          <div class="quest-label"><span class="quest-star">★</span> NOVA MISSÃO DESBLOQUEADA</div>
+          <div class="dialog-box">
+            <div class="dialog-name">Alicia Flor <span>✦</span></div>
+            <p class="pixel-greeting">Olá, viajante!</p>
+            <h1>Bem-vindo à<br><em>minha ilha!</em></h1>
+            <p class="dialog-description">Sou estudante de Desenvolvimento de Sistemas e esta é minha pequena parte da Grand Line: um lugar para reunir projetos, ideias e descobertas.</p>
+            <a class="pixel-button primary" href="#sobre">COMEÇAR A EXPLORAR <span>▶</span></a>
+          </div>
+          <div class="hero-hint">↓ USE O MENU PARA EXPLORAR A ILHA ↓</div>
+        </div>
+        <div class="player-sprite" aria-hidden="true"><span class="sprite-shadow"></span><span class="sprite-hat"></span><span class="sprite-head"></span><span class="sprite-hair"></span><span class="sprite-body"></span><span class="sprite-arm"></span><span class="sprite-leg left"></span><span class="sprite-leg right"></span></div>
+        <div class="location-tag">📍 PRAIA DA PARTIDA</div>
+      </section>
+
+      <section class="content-section about" id="sobre">
+        <div class="section-heading"><div class="section-icon">☺</div><div><small>PERSONAGEM / PERFIL</small><h2>Quem está por trás da aventura?</h2></div><span class="heading-line"></span><span class="level">LV. 01</span></div>
+        <div class="about-grid">
+          <div class="profile-card pixel-panel">
+            <div class="panel-top"><span>RETRATO DO VIAJANTE</span><span>▢ ▢ ▢</span></div>
+            <div class="portrait-stage"><canvas id="portrait" width="96" height="112" aria-label="Retrato pixel art de uma personagem com chapéu de palha"></canvas></div>
+            <h3>ALICIA FLOR</h3><p class="role">DESENVOLVEDORA EM FORMAÇÃO</p>
+            <div class="profile-divider"></div>
+            <p class="profile-line"><span>⌖</span> Brasil</p><p class="profile-line"><span>♥</span> Tecnologia & criatividade</p>
+            <div class="profile-rank">✦ TRIPULANTE EM TREINAMENTO ✦</div>
+          </div>
+          <article class="bio-card pixel-panel">
+            <div class="panel-top"><span>DIÁRIO DE BORDO</span><span>12 / 08 / 2026</span></div>
+            <div class="dialog-name">Uma pequena apresentação</div>
+            <p>Olá! Meu nome é <strong>Alicia Flor</strong>, sou estudante de Desenvolvimento de Sistemas no SENAI “Prof. João Baptista Salles da Silva”.</p>
+            <p>Sou apaixonada por tecnologia, animes e criatividade. Gosto de transformar ideias em soluções digitais e estou sempre buscando aprender algo novo, experimentar ferramentas e construir projetos que tenham personalidade.</p>
+            <p>Meu objetivo é continuar evoluindo como desenvolvedora — uma missão de cada vez!</p>
+            <div class="interests"><span>✦ Programação</span><span>✦ One Piece</span><span>✦ Arte</span><span>✦ Biologia</span></div>
+            <div class="bio-sticker">KEEP<br>GOING!</div>
+          </article>
+          <aside class="skills-card pixel-panel">
+            <div class="panel-top"><span>STATUS</span><span>▤</span></div>
+            <h3>Habilidades</h3>
+            <div class="skill"><div><span>HTML / CSS</span><b>82%</b></div><i><u style="width:82%"></u></i></div>
+            <div class="skill"><div><span>JavaScript</span><b>68%</b></div><i><u style="width:68%"></u></i></div>
+            <div class="skill"><div><span>Python</span><b>62%</b></div><i><u style="width:62%"></u></i></div>
+            <div class="skill"><div><span>UI / UX</span><b>74%</b></div><i><u style="width:74%"></u></i></div>
+            <div class="skill"><div><span>Equipe</span><b>86%</b></div><i><u style="width:86%"></u></i></div>
+            <p class="skill-note">* Níveis ilustrativos de familiaridade.</p>
+            <div class="inventory"><span>🎒</span><div><b>INVENTÁRIO</b><small>Curiosidade · Criatividade · Persistência</small></div></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="content-section projects" id="projetos">
+        <div class="section-heading"><div class="section-icon">▣</div><div><small>COLEÇÃO / CONQUISTAS</small><h2>Projetos encontrados pelo caminho</h2></div><span class="heading-line"></span><span class="level">03 ITENS</span></div>
+        <p class="section-lead">Cada projeto é uma ilha nova, uma habilidade desbloqueada e uma história para contar.</p>
+        <div class="project-grid">
+          <article class="project-card pixel-panel">
+            <div class="project-art art-green"><span class="pixel-sun"></span><span class="pixel-tree">♣</span><span class="art-label">GREEN ISLAND</span><span class="pixel-crate">♻</span></div>
+            <div class="project-info"><div class="project-type">WEB / SUSTENTABILIDADE</div><h3>Moda Sustentável</h3><p>Projeto relacionado ao ODS 17, conectando sustentabilidade, colaboração e tecnologia.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JS</span></div><a class="pixel-button small" href="https://github.com/AliciaEPFlor" target="_blank" rel="noopener">ABRIR PROJETO ↗</a></div>
+          </article>
+          <article class="project-card pixel-panel">
+            <div class="project-art art-horror"><span class="pixel-moon"></span><span class="pixel-tower">▥</span><span class="art-label">SIGNAL LOST</span><span class="scanline"></span></div>
+            <div class="project-info"><div class="project-type">PROJETO INTEGRADOR</div><h3>WWAnalog</h3><p>Wiki independente para catalogar obras de Analog Horror, episódios, categorias e criadores.</p><div class="tag-row"><span>PHP</span><span>POSTGRESQL</span><span>CSS</span></div><a class="pixel-button small" href="https://github.com/AliciaEPFlor" target="_blank" rel="noopener">ABRIR PROJETO ↗</a></div>
+          </article>
+          <article class="project-card pixel-panel">
+            <div class="project-art art-game"><div class="tic-grid"><b>×</b><b>○</b><b>×</b><b>○</b><b>×</b><b>○</b><b>○</b><b>×</b><b>×</b></div><span class="art-label">PLAYER 1 READY</span></div>
+            <div class="project-info"><div class="project-type">JAVASCRIPT / LÓGICA</div><h3>Jogo da Velha</h3><p>Versão digital do jogo clássico para praticar lógica, condições e interação com o usuário.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JS</span></div><a class="pixel-button small" href="https://github.com/AliciaEPFlor" target="_blank" rel="noopener">ABRIR PROJETO ↗</a></div>
+          </article>
+        </div>
+        <p class="project-footnote">Os links estão direcionados ao GitHub geral. Substitua pelos links individuais dos repositórios quando quiser.</p>
+      </section>
+
+      <section class="content-section journey" id="jornada">
+        <div class="section-heading"><div class="section-icon">✦</div><div><small>MAPA / PROGRESSO</small><h2>Minha jornada até aqui</h2></div><span class="heading-line"></span><span class="level">QUEST LOG</span></div>
+        <div class="journey-layout">
+          <div class="quest-log pixel-panel">
+            <div class="panel-top"><span>MISSÕES CONCLUÍDAS</span><span>★ 05</span></div>
+            <div class="quest-item"><span class="quest-year">2016</span><div><b>Primeiro palco</b><p>Apresentação de dança hip-hop.</p></div><span class="quest-check">✓</span></div>
+            <div class="quest-item"><span class="quest-year">2018</span><div><b>Novas expressões</b><p>Apresentação musical.</p></div><span class="quest-check">✓</span></div>
+            <div class="quest-item"><span class="quest-year">2021</span><div><b>Disciplina e movimento</b><p>Basquete, Taekwondo e grupo de dança.</p></div><span class="quest-check">✓</span></div>
+            <div class="quest-item"><span class="quest-year">2025</span><div><b>Participação e impacto</b><p>Projetos de conscientização, olimpíadas acadêmicas e medalha de prata na OBG.</p></div><span class="quest-check">✓</span></div>
+            <div class="quest-item"><span class="quest-year">2026</span><div><b>Construindo o futuro</b><p>GrandPrix SENAI, NPA-ADC e desenvolvimento de projetos web.</p></div><span class="quest-check current">★</span></div>
+          </div>
+          <aside class="quote-board pixel-panel"><div class="quote-stars">✦ ✧ ✦</div><div class="quote-portrait">☠</div><blockquote>“Grandes sonhos exigem grande esforço.”</blockquote><p>— Roronoa Zoro</p><div class="quote-footer">LEMBRETE DA TRIPULAÇÃO</div></aside>
+        </div>
+      </section>
+
+      <section class="content-section extras" id="extras">
+        <div class="section-heading"><div class="section-icon">🎒</div><div><small>BAÚ PESSOAL</small><h2>Coisas que eu gosto</h2></div><span class="heading-line"></span></div>
+        <div class="extras-grid">
+          <article class="extra-tile"><span class="extra-icon">📚</span><small>ESTANTE</small><h3>Livros</h3><p>Sussurro · Dom Casmurro · Ala D</p></article>
+          <article class="extra-tile"><span class="extra-icon">☠</span><small>ANIME LOG</small><h3>Animes</h3><p>One Piece · Dr. Stone · Jujutsu Kaisen · Attack on Titan · My Hero Academia</p></article>
+          <article class="extra-tile"><span class="extra-icon">🎨</span><small>OFICINA</small><h3>Hobbies</h3><p>Tocar guitarra, desenhar, pintar, estudar programação e assistir.</p></article>
+          <article class="extra-tile"><span class="extra-icon">🌱</span><small>COLEÇÃO</small><h3>Interesses</h3><p>Programação · Pintura · Biologia · Geopolítica</p></article>
+        </div>
+        <div class="media-note"><b>♫ TRILHA SONORA & CINEMA</b><p>Filmes: O Menino do Pijama Listrado, Nada de Novo no Front, Jujutsu Kaisen 0 e Devoradores de Estrelas.</p><p>Músicas: Self Aware, Bling-Bang-Bang-Born, In Bloom, País Tropical, bellyache e Atlantis.</p></div>
+      </section>
+
+      <section class="contact" id="contato">
+        <canvas id="contactScene" class="contact-pixel-scene" width="480" height="130" aria-hidden="true"></canvas>
+        <div class="contact-inner">
+          <div><small>DEN DEN MUSHI / COMUNICAÇÃO</small><h2>Vamos conversar?</h2><p>Tem uma ideia, sugestão ou oportunidade? Envie um sinal pelos meus canais!</p></div>
+          <div class="social-panel pixel-panel"><div class="panel-top"><span>CONTATOS DA TRIPULAÇÃO</span><span>✉</span></div><a href="https://github.com/AliciaEPFlor" target="_blank" rel="noopener"><b>GH</b> GitHub ↗</a><a href="https://www.linkedin.com/in/alicia-elizabeth-pilar-flor/" target="_blank" rel="noopener"><b>in</b> LinkedIn ↗</a><a href="https://www.instagram.com/_oleandro._.verde_/" target="_blank" rel="noopener"><b>◎</b> Instagram ↗</a><a href="https://www.instagram.com/_oleandro._.toca_/" target="_blank" rel="noopener"><b>♫</b> Instagram música ↗</a><button class="pixel-button small" id="print">IMPRIMIR / SALVAR PDF</button></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>☠ ALICIA'S ISLAND</span><span>FEITO COM PIXELS, CAFÉ E ESPÍRITO DE AVENTURA.</span><a href="#inicio">VOLTAR AO TOPO ↑</a></footer>
+  </div>
+  <script src="js/pixel-scenes.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
